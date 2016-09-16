@@ -1,0 +1,25 @@
+{
+  "name": "example-project",
+  "description": "a website",
+  "main": "index.js",
+  "authors": [
+    "Enmanuel Almanzar"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/EAlman21/firstProject",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "MDBootstrap": "*",
+    "angular": "^1.5.8"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "example-project",
+  "version": "1.0.0",
+  "description": "a website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EAlman21/firstProject.git"
+  },
+  "author": "Enmanuel Almanzar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EAlman21/firstProject/issues"
+  },
+  "homepage": "https://github.com/EAlman21/firstProject#readme"
+}
