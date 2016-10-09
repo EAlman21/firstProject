@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/EAlman21/firstProject/issues"
   },
-  "homepage": "https://github.com/EAlman21/firstProject#readme"
+  "homepage": "https://github.com/EAlman21/firstProject#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }

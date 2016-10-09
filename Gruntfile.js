@@ -1,0 +1,19 @@
+module.exports = function(grunt){
+  grunt.initConfig({
+      concat:{
+        html:{
+          src:['index.html'],
+          dest:'build/built.html'
+        }
+      },
+      watch:{
+        html:{
+          files:['*.html'],
+          tasks:['concat:html']
+        }
+      }
+  });
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.registerTask('default',['concat','watch'])
+}
