@@ -11,17 +11,42 @@
   </head>
 
   <body>
-	<nav class="navbar navbar-dark red">
-	   <div class="container-fluid">
-	      <div class="navbar-header">
-	         <a class="navbar-brand" href="#">BookBay</a>
-        </div>
-    </div>
-  </nav>
+  	<nav class="navbar navbar-dark red">
 
-	<script src="bower_components/MDBootstrap/js/jquery-2.2.3.min.js"></script>
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+        <i class="fa fa-bars"></i>
+      </button>
+  	   <div class="container">
+  	      <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+  	         <a class="navbar-brand" href="#">BookBay</a>
+             <ul class="nav navbar-nav">
+               <li class="nav-item active">
+                 <a class="nav-link">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link">Inbox</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link">Owned</a>
+               </li>
+               <li class="nav-item btn-group">
+                 <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selling</a>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                   <a class="dropdown-item">Top Sellers</a>
+                   <a class="dropdown-item">Genre</a>
+                   <a class="dropdown-item">Recommendation</a>
+                 </div>
+               </li>
+             </ul>
+             <form class="form-inline">
+               <input class="form-control" type="text" placeholder="Search">
+             </form>
+          </div>
+      </div>
+    </nav>
+  </body>
+  <script src="bower_components/MDBootstrap/js/jquery-2.2.3.min.js"></script>
   <script src="bower_components/MDBootstrap/js/tether.min.js"></script>
 	<script src="bower_components/MDBootstrap/js/bootstrap.min.js"></script>
   <script src="bower_components/MDBootstrap/js/mdb.min.js"></script>
-  </body>
 </html>
