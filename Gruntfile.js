@@ -9,7 +9,7 @@ module.exports = function(grunt){
       watch:{
         html:{
           files:['*.html'],
-          tasks:['concat:html']
+          tasks:['concat:html'],
         }
       }
   });
