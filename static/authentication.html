@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bookBayApp">
   <head>
     <meta charset="utf-8">
     <title>Welcome to BookBay</title>
@@ -10,7 +10,7 @@
   </head>
   <header>
     <nav class="navbar navbar-dark red">
-      <div class="container-fluid">
+      <div class="container-fluid" ng-controller="signInController as SICtrl">
         <div class="navbar-header">
           <a class="navbar-brand white-text">BookBay</a>
         </div>
@@ -27,34 +27,36 @@
     </nav>
   </header>
   <body>
-    <main >
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4 offset-md-4">
-               <div class="card">
-                 <div class="card-header danger-color white-text text-xs-center">
-                   <h3>Welcome to BookBay</h3>
-                 </div>
-                 <br>
-                 <div class="md-form">
-                   <i class="fa fa-user prefix"></i>
-                   <input type="text" id="username" class="form-inline">
-                   <label for="username">Username</label>
-                 </div>
-                 <div class="md-form">
-                  <i class="fa fa-lock prefix"></i>
-                  <input type="password" id="password" class="form-line">
-                  <label for="email">Password</label>
-                 </div>
-                 <div class="text-xs-center">
-                  <button type="button" class="btn btn-elegant">Sign up</button>
-                 </div>
-              </div>
-          </div>
+   <main >
+    <div class="container-fluid" ng-controller= "signUpController as SUCtrl">
+     <div class="row">
+      <div class="col-md-4 offset-md-4">
+       <div class="card">
+        <div class="card-header danger-color white-text text-xs-center">
+          <h3>Welcome to BookBay</h3>
         </div>
+        <br>
+         <div class="md-form">
+          <i class="fa fa-user prefix"></i>
+          <input type="text" id="username" class="form-inline">
+          <label for="username">Username</label>
+         </div>
+         <div class="md-form">
+          <i class="fa fa-lock prefix"></i>
+          <input type="password" id="password" class="form-line">
+          <label for="email">Password</label>
+         </div>
+         <div class="text-xs-center">
+          <button type="button" class="btn btn-elegant">Sign up</button>
+         </div>
+       </div>
       </div>
-    </main>
+     </div>
+    </div>
+  </main>
   </body>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../js/bookBay.js"></script>
   <script src="../bower_components/MDBootstrap/js/jquery-2.2.3.min.js"></script>
   <script src="../bower_components/MDBootstrap/js/tether.min.js"></script>
   <script src="../bower_components/MDBootstrap/js/bootstrap.min.js"></script>
