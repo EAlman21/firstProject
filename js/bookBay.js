@@ -15,10 +15,36 @@ app.controller('authController',function($scope){
 
 });
 
-app.controller('inboxContoller',function(){
+app.controller('indexController',function($scope){
+  this.home = true;
+  this.inbox = false;
+  this.owned = false;
+  this.settings = false;
 
-});
+  this.showHome = function(){
+    this.inbox = false;
+    this.owned = false;
+    this.settings = false;
+    this.home = true;
+  };
 
-app.controller('settingController',function(){
+  this.showInbox = function(){
+    this.home = false;
+    this.settings = false;
+    this.owned = false;
+    this.inbox = true;
+  };
+  this.showOwned = function(){
+    this.home = false;
+    this.settings = false;
+    this.inbox = false;
+    this.owned = true;
+  };
 
+  this.showSettings = function(){
+    this.home = false;
+    this.settings = false;
+    this.owned = false;
+    this.settings = true;
+  };
 });

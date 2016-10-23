@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang= "en">
+<html lang= "en" >
   <head>
 	<meta charset = "utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,32 +10,26 @@
   <link rel="stylesheet" href="../bower_components/MDBootstrap/css/mdb.min.css">
   </head>
 
-  <body>
-  	<nav class="navbar navbar-dark red ">
-
+  <body ng-app="bookBayApp" ng-controller="indexController as index">
+    <nav class="navbar navbar-dark red ">
       <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
         <i class="fa fa-bars"></i>
       </button>
-  	   <div class="container">
-  	      <div class="collapse navbar-toggleable-xs" id="collapseEx2">
-  	         <a class="navbar-brand" href="#">BookBay</a>
+       <div class="container">
+          <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+             <a class="navbar-brand" href="#">BookBay</a>
              <ul class="nav navbar-nav">
-               <li class="nav-item active">
+               <li class="nav-item active" ng-click="index.showHome()" >
                  <a class="nav-link">Home</a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item" ng-click="index.showInbox()">
                  <a class="nav-link">Inbox</a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item" ng-click="index.showOwned()">
                  <a class="nav-link">Owned</a>
                </li>
-               <li class="nav-item btn-group">
-                 <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selling</a>
-                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                   <a class="dropdown-item">Top Sellers</a>
-                   <a class="dropdown-item">Genre</a>
-                   <a class="dropdown-item">Recommendation</a>
-                 </div>
+               <li class="nav-item" ng-click="index.showSettings()">
+                 <a class="nav-link">Settings</a>
                </li>
              </ul>
              <form class="form-inline">
@@ -45,9 +39,76 @@
           </div>
       </div>
     </nav>
+    <br>
+    <div ng-show ="index.home">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-5">
+              <h1>Top Sellers</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-header danger-color-dark white-text text-xs-center">Title</div>
+                  <div class="card-block">
+                      <h4 class="card-title">Special title treatment</h4>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a class="btn btn-elegant">Go somewhere</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header danger-color-dark white-text text-xs-center">Harry Potter and the Chamber of Secrets</div>
+                  <div class="card-block">
+                      <h4 class="card-title">Special title treatment</h4>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a class="btn btn-elegant">Go somewhere</a>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header danger-color-dark white-text text-xs-center">Harry Potter and the Chamber of Secrets</div>
+                  <div class="card-block">
+                      <h4 class="card-title">Special title treatment</h4>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a class="btn btn-elegant">Go somewhere</a>
+                  </div>
+               </div>
+             </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 offset-md-4">
+              <h1>Recommendations</h1>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div ng-show="index.inbox">
+      2
+    </div>
+    <div ng-show="index.owned">
+      3
+    </div>
+    <div ng-show="index.settings">
+      4
+    </div>
+
   </body>
   <script src="../bower_components/MDBootstrap/js/jquery-2.2.3.min.js"></script>
   <script src="../bower_components/MDBootstrap/js/tether.min.js"></script>
 	<script src="../bower_components/MDBootstrap/js/bootstrap.min.js"></script>
   <script src="../bower_components/MDBootstrap/js/mdb.min.js"></script>
+  <script src="../bower_components/angular/angular.min.js"></script>
+  <script src="../js/bookBay.js"></script>
 </html>
