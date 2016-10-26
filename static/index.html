@@ -108,6 +108,16 @@
           <div class="col-sm-9 col-lm-10 col-sm-pull-3 col-lg-pull-2">
             <div class="card">
               <div class="card-block" style="height:500px">
+                <div class="">
+
+                </div>
+                <div class="modal-footer">
+                  <form class="form-line">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Enter a message..">
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -118,7 +128,85 @@
       3
     </div>
     <div ng-show="index.settings">
-      4
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="card">
+              <div class="card-block">
+                <div class="form-header white text-xs-center">
+                  <h3>Username Changed</h3>
+                </div>
+                <div class="md-form">
+                  <input required type="text" class="form-control" placeholder="old username">
+                </div>
+                <div class="md-form">
+                  <input required type="text" class="form-control" placeholder="new username">
+                </div>
+                <div class="text-xs-center">
+                  <button type="button" class="btn btn-elegant">Submit</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-xs-center">
+              <a href="#" ng-click="index.showPassword_form()" ng-show="index.settingsPassword">I want to change my password</a>
+            </div>
+            <div class="text-xs-center">
+              <a href="#" ng-click="index.showDelete_account()" ng-show="index.settingsAccount">I want to delete my account</a>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 offset-md-3">
+            <div class="card">
+              <div class="card-block">
+                <div class="form-header white text-xs-center">
+                  <h3>Password Changed</h3>
+                </div>
+                <div class="md-form">
+                  <input required type="text"class="form-control" placeholder="username">
+                </div>
+                <div class="md-form">
+                  <input required type="password" class="form-control" placeholder="old password">
+                </div>
+                <div class="md-form">
+                  <input required type="password" class="form-control" placeholder="new password">
+                </div>
+                <div class="text-xs-center">
+                  <button type="button" class="btn btn-elegant">Submit</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-xs-center">
+              <a href="#" ng-click="index.showSettings()" ng-show="index.settings">I want to change my username</a>
+            </div>
+            <div class="text-xs-center">
+              <a href="#" ng-click="index.showDelete_account()" ng-show="index.settingsAccount">I want to delete my account</a>
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-3">
+            <div class="card">
+              <div class="card-block">
+                <div class="form-header white text-xs-center">
+                  <h3>Delete my Account</h3>
+                </div>
+                <div class="md-form">
+                  <input required ="text" class="form-control" placeholder="username">
+                </div>
+                <div class="md-form">
+                  <input required="password" class="form-control" placeholder="password">
+                </div>
+                <div class="text-xs-center">
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-xs-center">
+              <a href="#"ng-click="index.showSettings()">I want to change my username</a>
+            </div>
+            <div class="text-xs-center">
+              <a href="#" ng-click="index.showDelete_account()" ng-show="index.settingsAccount">I want to change my password</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
     </div>
 
   </body>
