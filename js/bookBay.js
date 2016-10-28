@@ -1,7 +1,12 @@
-var app = angular.module('bookBayApp',[]);
+var app = angular.module('bookBayApp',['firebase', 'ui-router']);
 
+
+app.config(function($stateProvider){
+  var 
+
+});
 //add definition to sign up in authentication page
-app.controller('authController',function($scope){
+app.controller('authController',function($scope,){
   $scope.user = {username:'', password:''};
   $scope.error_msg = '';
   $scope.login = function(){

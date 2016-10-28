@@ -17,7 +17,10 @@
   ],
   "dependencies": {
     "grunt": "^1.0.1",
-    "components-font-awesome": "^4.6.3"
+    "components-font-awesome": "^4.6.3",
+    "angular-ui": "^0.4.0",
+    "firebase": "^3.5.2",
+    "angularfire": "^2.1.0"
   },
   "devDependencies": {
     "MDBootstrap": "*",
