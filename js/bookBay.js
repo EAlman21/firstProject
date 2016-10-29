@@ -1,4 +1,14 @@
 (function(){
+  var config = {
+    apiKey: "AIzaSyBGzXoCmETK9aeMfMhsOjUXMYVjBae6pvY",
+    authDomain: "bookbay-df7e7.firebaseapp.com",
+    databaseURL: "https://bookbay-df7e7.firebaseio.com",
+    storageBucket: "bookbay-df7e7.appspot.com",
+    messagingSenderId: "91776300700"
+  };
+  firebase.initializeApp(config);
+
+
   var app = angular.module('bookBayApp',[]);
 
 
